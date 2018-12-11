@@ -14,7 +14,11 @@ import io.fotoapparat.hardware.orientation.OrientationSensor
 import io.fotoapparat.log.Logger
 import io.fotoapparat.log.none
 import io.fotoapparat.parameter.ScaleType
-import io.fotoapparat.result.*
+import io.fotoapparat.result.CapabilitiesResult
+import io.fotoapparat.result.FocusResult
+import io.fotoapparat.result.ParametersResult
+import io.fotoapparat.result.PendingResult
+import io.fotoapparat.result.PhotoResult
 import io.fotoapparat.routine.camera.bootStart
 import io.fotoapparat.routine.camera.shutDown
 import io.fotoapparat.routine.camera.switchCamera
@@ -24,7 +28,11 @@ import io.fotoapparat.routine.focus.focus
 import io.fotoapparat.routine.parameter.getCurrentParameters
 import io.fotoapparat.routine.photo.takePhoto
 import io.fotoapparat.routine.zoom.updateZoomLevel
-import io.fotoapparat.selector.*
+import io.fotoapparat.selector.LensPositionSelector
+import io.fotoapparat.selector.back
+import io.fotoapparat.selector.external
+import io.fotoapparat.selector.firstAvailable
+import io.fotoapparat.selector.front
 import io.fotoapparat.view.CameraRenderer
 import io.fotoapparat.view.FocalPointSelector
 

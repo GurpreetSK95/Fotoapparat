@@ -14,8 +14,12 @@ import io.fotoapparat.coroutines.AwaitBroadcastChannel
 import io.fotoapparat.exception.camera.CameraException
 import io.fotoapparat.hardware.metering.FocalRequest
 import io.fotoapparat.hardware.metering.convert.toFocusAreas
-import io.fotoapparat.hardware.orientation.*
+import io.fotoapparat.hardware.orientation.Orientation
 import io.fotoapparat.hardware.orientation.Orientation.Vertical.Portrait
+import io.fotoapparat.hardware.orientation.OrientationState
+import io.fotoapparat.hardware.orientation.computeDisplayOrientation
+import io.fotoapparat.hardware.orientation.computeImageOrientation
+import io.fotoapparat.hardware.orientation.computePreviewOrientation
 import io.fotoapparat.log.Logger
 import io.fotoapparat.parameter.FocusMode
 import io.fotoapparat.parameter.Resolution
@@ -28,7 +32,7 @@ import io.fotoapparat.result.Photo
 import io.fotoapparat.util.FrameProcessor
 import io.fotoapparat.util.lineSeparator
 import io.fotoapparat.view.Preview
-import kotlinx.coroutines.experimental.CompletableDeferred
+import kotlinx.coroutines.CompletableDeferred
 import java.io.IOException
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
