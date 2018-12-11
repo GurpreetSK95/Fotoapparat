@@ -5,7 +5,6 @@ apply plugin: 'kotlin-android'
 group = 'io.fotoapparat'
 
 android {
-    buildToolsVersion versions.android.buildTools
     compileSdkVersion versions.sdk.target
 
     defaultConfig {
