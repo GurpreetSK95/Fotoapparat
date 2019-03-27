@@ -1,6 +1,6 @@
 # Fotoapparat
 
-#### This forked version uses stable coroutines but is not migrated to AndroidX.
+#### This forked version uses stable coroutines and has DEFAULT_JPEG_QUALITY set to 60, but is not migrated to AndroidX.
 
 ![Build status](https://travis-ci.org/RedApparat/Fotoapparat.svg?branch=master)
 
